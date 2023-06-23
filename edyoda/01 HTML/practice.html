@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./position.css">
+    <style>
+        *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html{
+    background-color: brown;
+}
+.grandpa{
+    border: 3px solid red;
+    height: 1500px;
+    margin: 50px;
+    background-color: darkkhaki;
+    
+}
+.parent{
+    border: 3px solid blue;
+    margin: 20px;
+    background-color: aqua;
+    top: 50px;
+    position: relative;
+}
+.child{
+    border: 3px solid green;
+    width: 300px;
+    height: 200px;
+    display: inline-block;
+}
+#child2{
+    background-color: blueviolet;
+    position: sticky;
+    top: 150px;
+    right: 130px;
+}
+    </style>
+</head>
+
+<body>
+    <div class="grandgrandpa">
+        <div class="grandpa">
+            <div class="parent">
+                <div class="child" id="child1">one</div>
+                <div class="child" id="child2">two</div>
+                <div class="child" id="child3">three</div>
+                <div class="child" id="child4">four</div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

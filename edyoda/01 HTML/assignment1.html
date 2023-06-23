@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorite Foods WebApp</title>
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+
+        .food {
+            margin: 13px 20px;
+            padding: 23;
+            border: 2px solid black;
+            border-radius: 30px;
+            text-align: center;
+            background-color: rgb(129, 33, 97);
+            color: white;
+
+        }
+
+        .navbar {
+            background-color: rgb(0, 0, 0);
+            border-radius: 30px;
+        }
+
+        .navbar ul {
+            overflow: auto;
+        }
+
+        .navbar li {
+            float: left;
+            list-style: none;
+            margin: 13px 20px;
+            text-decoration: none;
+        }
+
+        .navbar li a {
+            padding: 3px;
+            text-decoration: none;
+            color: aliceblue;
+        }
+
+        .navbar li a:hover {
+            color: aquamarine;
+        }
+
+
+
+        .set {
+            background-color: rgb(78, 203, 180);
+            border: 2px solid black;
+            border-radius: 12px;
+            text-align: center;
+            padding: 03px 4px;
+            margin: auto;
+            width: 440px;
+            padding: 15px;
+
+        }
+
+        .du {
+            background-color: rgb(109, 177, 201);
+        }
+
+        .img {
+            border: 2px solid black;
+            border-radius: 23px;
+            height: 425px;
+            width: 600px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+
+        .menu {
+            /* background-color: red; */
+            text-align: center;
+            width: 250px;
+            padding: 03px 4px;
+            margin: auto;
+            padding: 15px;
+        }
+
+        .ord {
+            border: 2px solid black;
+            border-radius: 15px;
+            font-size: 15px;
+            color: rgb(63, 9, 156);
+            width: 80px;
+            height: 30px;
+
+        }
+
+        .ord:hover {
+            background-color: black;
+            color: white;
+        }
+
+        #none{
+            text-decoration: none;
+        }
+
+        div ol {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        div ol li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        div ol li a {
+            color: #333;
+            text-decoration: none;
+            padding: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Contact us</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <h1 class="food"> Top Five Favorite Foods</h1>
+    <div style="background-color:pink;" id="home">
+        <ol id="none">
+            <li>
+                <a href="#pic1">Biryani</a>
+            </li>
+            <li>
+                <a href="#pic2">Pizza</a>
+            </li>
+            <li>
+                <a href="#pic3">Grilled chicken </a>
+            </li>
+            <li>
+                <a href="#pic4">Masala Dosa</a>
+            </li>
+            <li>
+                <a href="#pic5">Chhole Bhature</a>
+            </li>
+
+        </ol>
+    </div>
+    <br>
+    <div class="du">
+        <div id="pic1">
+            <img src="https://cdn.pixabay.com/photo/2016/01/15/10/56/biryani-1141444_1280.jpg" class="img">
+            <p class="set">Biryani</p>
+            <div class="menu">
+                <button class="ord">order</button>
+            </div>
+            <a href="#home" >Home</a>
+        </div>
+        <div id="pic2">
+            <img src='https://cdn.pixabay.com/photo/2016/06/08/00/03/pizza-1442946_1280.jpg' class="img">
+            <p class="set">Pizza</p>
+            <div class="menu">
+                <button class="ord">order</button>
+            </div>
+            <a href="#home">Home</a>
+            
+        </div>
+        <div id="pic3">
+            <img src="https://cdn.pixabay.com/photo/2016/04/17/12/10/grilled-chicken-1334632_1280.jpg" class="img">
+            <p class="set">Grilled Chicken</p>
+            <div class="menu">
+                <button class="ord">order</button>
+            </div>
+            <a href="#home">Home</a>
+        </div>
+        <div id="pic4">
+            <img src="https://cdn.pixabay.com/photo/2022/01/27/07/34/masala-dosa-6971359_1280.jpg" class="img">
+            <p class="set">Masala Dosa</p><br>
+            <div class="menu">
+                <button class="ord">order</button>
+            </div>
+            <a href="#home">Home</a>
+        </div>
+        <div id="pic5">
+            <img src="https://cdn.pixabay.com/photo/2022/12/28/17/44/bowl-7683485_1280.jpg" class="img">
+            <p class="set">Chhole Bhature</p><br>
+            <div class="menu">
+                <button class="ord">order</button>
+            </div>
+            <a href="#home">Home</a>
+        </div>
+    </div>
+
+</body>
+
+</html>

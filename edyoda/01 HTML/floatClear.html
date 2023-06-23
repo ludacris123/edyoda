@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* ul {
+            background-color: teal;
+            list-style-type: none;
+            overflow: auto;
+
+        }
+
+        li {
+            color: white;
+            padding: 5px 10px;
+            float: left;
+            when we use float then it will excluded from its existing place (if we put list in unorderlist then it will 
+            leave unordered list after assigning float to the list . if we don't want to lose that space then we have to 
+            assighn one more important value is overflow;auto;)
+        } */
+        #content{
+            width: 70%;
+            background-color: green;
+            height: 200px;
+            float: left;
+        }
+        #sidebar{
+            width: 30%;
+            background-color: indianred;
+            height:150px;
+            float: left;
+            
+        }
+        #footer{
+            background-color: yellowgreen;
+            /* if the content and sidebar have same height then footer and floated left then footer will show in next line 
+            but if sidebar height decrease then footer think that next line started from below the sidebar 
+            (that's why we use footer)  The clear property specifies what should happen with the element that is next to a floating element.*/
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>contact</li>
+        <li>container</li>
+        <li>number</li>
+    </ul> -->
+    <div id="content">content</div>
+    <div id="sidebar">sidebar</div>
+    <div id="footer">
+        <p>Footer</p>
+    </div>
+    
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+block
+1. always starts with new line
+2. always take full width
+3. height and width
+_____________________________________________________
+inline
+1. not start with new line
+2. not taking full widht
+3. no taking height and width in  full length(line)
+_______________________________________________________
+inline-block
+1. when we give inline-block  property in element then we can give height and widht to inline element
+_____________________________________________________
+display none
+1.when we use dispay none then element lose its space and visibility (not in use )
+visibility none
+1.when we use visibility none then element will not lose its space but lose its visibility in webpage.
+_____________________________________________________
+
+/* important note "em is taking measurement relative to its parent but rem is taking from html tag both multiply by its measurment *2 from its relative " */
+
+_____________________________________________________
+
+we can use opacity in image to make transparent image, we can use filter in image also (contrast,dropshadow,grayscale,huerotate(in degree),invert,saturation)
+
+_____________________________________________________overflow
+overflow property is used when we have to clip somehing in a containter ( overflow:auto- this can add scroll when content is larger in future if the content is less then it will not appear scroll in it)
+(overflow-xand -y can clop content in both direction separetly)(overflow:hidden)
+
+_____________________________________________________resizable
+(resize:none- this will destroy resize property of textarea)(resize:both- this will give resize to any container with both axis)(resize:vertical and horizontal)
+
+_____________________________________________________css functions
+use(:root{--primary-color:teal;}this is use when we want one color for different element , use(var(--primary color:teal)))
+
+_____________________________________________________ Pseudo-classes
+(element:fist-child,last-child)and (element:nth-child(no.,odd,even,3n+1){property}) (element:focus{property})
+
+_____________________________________________________Pseudo-element
+(p::first-letter{property}),(p::first-line{property}),(p::first-line{font-sizw }),(h1::before or after{content: url(imageslinik)})
+(::selection{color:red} this help to select text in different color)
+
+_____________________________________________________z-index
+Z Index ( z-index ) is a CSS property that defines the order of overlapping HTML elements.
+ Elements with a higher index will be placed on top of elements with a lower index. Note: Z index only works on positioned elements ( position:absolute , position:relative , or position:fixed )
+
+_____________________________________________________transform(2d)
+1(transform:translate(5px,5px)this will move your targeted element in y and x axis )if element is inline then do display-inline-block
+2(transform:rotate(20deg)this will rotare your element in certain directin you put in degree this will also move in -)
+3(transform:scale(2,3)this help in getting size bigger or smaller (here it takes two interget one is for width 
+and second one is for height)this no double the size of existing size given by you(scalex(widht)vise versa))
+4(transform:skewx ans skewy (20deg)both can be written in same skew(20deg,20deg))
+5(transform:matrix(scalex(),skewy(),skew(x),scaley(),translatex(),translatey(),)we can use all transform function in one line)
+
+_____________________________________________________tramsform(3d)
+there is important things to study in 3d transform is 'perspective'--The perspective property is used to give a 3D-positioned element some perspective.The perspective property defines how far the object is away from the user
+            /* transform:perspective(300px)rotate3d(71,50,50,30deg) */
+            /* here rotate have 4 parameter (x-axis, y-axis, z-axis,and angle) */
+            /* transform: perspective(300px)translate3d(50px,50px,50px); */
+
+_____________________________________________________
+

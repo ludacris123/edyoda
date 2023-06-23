@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="formData"></div>
+    <script>
+        const formData = document.getElementById("formData");
+        new URLSearchParams(window.location.search).forEach((val, name) => {
+            formData.append(` ${name} ----> ${val}`);
+            formData.append(document.createElement("hr"));
+        });
+    </script>
+</body>
+
+</html>
+
+<!-- const mykeysValues = window.location.search;
+    console.log("keys and values:" mykeysValues);
+    
+    const urlParams = new URLSearchParams(mykeysValues);
+    
+    const param1 = urlParams.get('name')
+    const param2 = urlparams.get('age')
+
+    console.log('Name',param1);
+    console.log('Age',param2);
+-->

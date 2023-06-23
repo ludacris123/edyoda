@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex-container {
+            background-color: indianred;
+            /* making children flexible box */
+            display: flex;
+            height: inherit;
+            /* flex dirtection can be (row and column)(column-reverse and column reverse) */
+
+            /* flex-wrap can be nowrap- this will wrap your content with affecting your width and height and wrap all content in one column
+            but flex-wrap = wrap then it will not affect your content widht and wrap content inside box in next line..  
+            flex-wrap= wrap-reverse this will wrap your content in descending order(means fiest content comes last and vise-versa) */
+
+            /* flex-wrap= row wrap or column wrap it will wrap your content in row and column manner */
+
+            /* justify-content= centre,flex-start,flex-end,space-between,space-around */
+            /* main-axis is horizontal(row) and cross axis vertical (column)  justify-content — controls alignment of all items on the main axis. align-items — controls alignment of all items on the cross axis.*/
+
+            /* align-item= streatch(by-default) centre,flex-end,flex-start 
+            The align-content property determines how flex lines are aligned along the cross-axis while the 
+            align-items property determines how flex items are aligned within a flex line and along the cross-axis. */
+            
+        }
+
+        .flex-child {
+            background-color: wheat;
+            margin: 20px;
+            padding: 20px;
+            width: 100px;
+        }
+
+        #one{
+            /* we use 'order' property for giving order to items */
+            /* flex-grow:1; */
+            flex-shrink: 1;
+            /* flex-basis: 300px; this helps to give initial width to item later they can be changed according to height */
+        }
+        #two{
+            /* flex-grow:1; */
+            /* flex-shrink: 0; */
+            align-self: center; 
+        }
+        #three{
+            /* flex-grow:4; */
+            /* flex-shrink: 4; */
+            align-self: flex-start;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex-container">
+        <div class="flex-child" id="one">one</div>
+        <div class="flex-child" id="two">two</div>
+        <div class="flex-child" id="three">three</div>
+        <!-- <div class="flex-child">four</div>
+        <div class="flex-child">five</div>
+        <div class="flex-child">six</div>
+        <div class="flex-child">seven</div> -->
+    </div>
+</body>
+
+</html>
